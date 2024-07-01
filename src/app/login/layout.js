@@ -1,9 +1,6 @@
-import {Inter} from "next/font/google";
-import "./globals.css";
-import ThemeChanger from "@/components/theme";
+import "@/app/globals.css";
+import styles from "@/app/page.module.css";
 import {ThemeProvider} from "next-themes";
-
-const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
     title: "Vision",
@@ -12,8 +9,8 @@ export const metadata = {
 
 export default function RootLayout({children}) {
     return (
-        <html lang="pt">
-        <body className={inter.className}>
+        <html lang="pt" className={styles.page}>
+        <body className={styles.page}>
         <ThemeProvider>
             {children}
         </ThemeProvider>
