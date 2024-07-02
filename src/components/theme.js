@@ -67,7 +67,7 @@ export default function ThemeChanger () {
     return (
         <FormGroup>
             <FormControlLabel
-                control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+                control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked={theme !== 'light'} />}
                 onChange={changeTheme}
                 label=""
             />
