@@ -17,10 +17,7 @@
             #0071ff33 160deg,
             transparent 360deg
     );
-    --secondary-glow: radial-gradient(
-            rgba(255, 255, 255, 1),
-            rgba(255, 255, 255, 0)
-    );
+    --secondary-glow: dark;
 
     --tile-start-rgb: 239, 245, 249;
     --tile-end-rgb: 228, 232, 233;
@@ -41,6 +38,7 @@
 
     --background: white;
     --foreground: black;
+    --color: black;
 }
 
 [data-theme='dark'] {
@@ -48,12 +46,12 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --primary-glow: black;
     --secondary-glow: linear-gradient(
             to bottom right,
-            rgba(1, 65, 255, 0),
-            rgba(1, 65, 255, 0),
-            rgba(1, 65, 255, 0.3)
+            rgba(49, 131, 255, 0),
+            rgba(49, 131, 255, 0),
+            rgba(49, 131, 255, 0.3)
     );
 
     --tile-start-rgb: 2, 13, 46;
@@ -75,6 +73,7 @@
 
     --background: white;
     --foreground: black;
+    --color: white;
 }
 
 * {

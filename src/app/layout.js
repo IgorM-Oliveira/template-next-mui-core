@@ -1,7 +1,7 @@
 import {Inter} from "next/font/google";
 import "./globals.css";
-import ThemeChanger from "@/components/theme";
 import {ThemeProvider} from "next-themes";
+import * as React from "react";
 
 const inter = Inter({subsets: ["latin"]});
 
