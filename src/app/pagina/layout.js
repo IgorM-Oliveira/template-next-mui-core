@@ -2,6 +2,7 @@ import {Inter} from "next/font/google";
 import "@/app/globals.css";
 import Header from "@/components/header";
 import { ThemeProvider } from 'next-themes'
+import MenuComponent from "@/components/mult-menu";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -15,6 +16,7 @@ export default function RootLayout({children}) {
         <html lang="pt">
         <body className={inter.className}>
         <Header/>
+        <MenuComponent />
         <ThemeProvider>
             {children}
         </ThemeProvider>
